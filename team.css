@@ -1,0 +1,320 @@
+/* padding shorthand: top right bottom left */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+    font-size: 1.1rem;
+
+
+
+}
+
+html {
+    background-color: white;
+}
+
+
+h1 {
+    font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans;
+    font-size: 3rem;
+    display: inline-block;
+    color: #353535;
+    padding-bottom: 0.4em;
+    /* display: inline; */
+    /* font-weight: bold; */
+
+}
+
+h3 {
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans;
+    font-size: 1.5rem;
+    color: #575757;
+}
+
+p{
+    color: #1E1E1E;
+}
+
+/* #mainHeading{
+    padding-left: 5rem;
+    padding-top: 9rem;
+} */
+
+#splash{
+    position: relative;
+    display: inline-block;
+
+}
+#subheading {
+    font-weight: 100;
+    /* padding-top: 0.6em; */
+    word-wrap: break-word;
+    line-height: 1.6em;
+    width: 100%;
+    position: absolute;
+
+}
+
+
+
+
+/* if somethings breaks, change 25vh back to 12rem, as well as #beautifulLandscape margin top back to 25rem */
+main {
+    padding-left: var(--big-padding);
+    padding-right: var(--big-padding);;
+    padding-top: 25vh;
+    transition: ease all .5s;
+}
+
+
+
+
+#beautifulLandscape {
+    display: block;
+    margin-top: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 8vw;
+}
+
+
+#logo {
+    position: absolute;
+    height: 5rem;
+    padding-left: var(--big-padding);
+    pointer-events: none;
+}
+
+
+
+/* makes the navbar stay on top */
+#mainNav{
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 10;
+}
+.mainNav {
+    text-align: center;
+    height: 5rem;
+    box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.068);
+}
+
+.nav {
+    display: inline-block;
+    padding-top: 2rem;
+    /* creates spaces between the links */
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+/* default settings for button */
+button {
+    color: white;
+    background-color: #7BAE7F;
+    border: none;
+    border-radius: 1.5em;
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6%;
+}
+
+button:hover {
+    background-color: #335c27;
+}
+
+/* hr{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    border-top: 0px solid rgb(238, 238, 238);
+    border-left: 0px solid rgb(238, 238, 238);
+    border-right: 0px solid rgb(238, 238, 238);
+
+} */
+
+
+
+.fa-circle {
+    color: #8EC37E;
+    scale: 0.3;
+}
+
+/* THIS IS THE NORMAL ONE */
+
+#newsletter {
+    display: block;
+    position: absolute;
+    right: var(--big-padding);
+    top: -0.6em;
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+}
+/* ---------------------------------- */
+
+#newsletterIcon {
+    padding: .5em;
+}
+#newsletterIconButton {
+    position: absolute;
+    border-radius: 1.5vh;
+    
+    
+}
+
+#newsletterIconVersion {
+    display: block;
+    position: absolute;
+    right: 4.76rem;
+    top: -0.6em;
+    opacity: 0;
+    height: 0%;
+    pointer-events: none;
+    /* hides by making height 0, pointer events none, opacity 0.*/
+}
+
+/* ------------------------------------ */
+
+.goalImage{
+    display: inline;
+
+    border-radius: 4vw;
+    /* might be optional: display might be all you need */
+    /* float: left; */
+    /*  ----*/
+    margin-right: 20vw;
+    /* old values: w: 20vh, h: 20vh */
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    
+
+}
+
+#waveTop{
+    width: 100%;
+    z-index: -10;
+    margin-top: -9rem;
+    position: absolute;
+    left: 0;
+
+}
+#waveBottom{
+    width: 100%;
+    z-index: -10;
+    margin-top: 3.51rem;
+    position: absolute;
+    left: 0;
+    transform: scaleY(-1);
+}
+/* #Hunger {
+    
+} */
+#hungerImg{
+    position: absolute;
+    /* float: right; */
+    /* this for some reasons is make or break */
+    right: var(--big-padding);
+    margin-right: 0vw;
+    /* display: block; */
+    
+
+    
+
+}
+#hungerText {
+    /* display: block; */
+    max-width: 50%;
+    
+}
+/* aspect-ratio: 1.1; */
+
+#Poverty{
+    margin-top: 15rem;
+}
+#goals {
+    margin-top: 10vw;
+    /* temporary: */
+    /* margin-bottom: 100vw; */
+    
+    
+}
+.goalText {
+    display: block;
+    overflow: auto;
+    /* controls if the text is inline with the image. Changes in this will affect .number*/
+    /* padding-top: 3vw;  */
+    margin-left: -2em;
+
+    
+}
+
+
+.singleGoal{
+    display: flex;
+    margin-bottom: 8rem; 
+    
+    /* - fixes the following with two items */
+
+}
+/* 
+#Poverty {
+    margin-top: 10rem;
+} */
+
+/* #Hunger {
+    padding-left: 0;
+    margin-left: 0;
+    left: 0;
+} */
+.number{
+    /* float: left; */
+    position: relative;
+    /* display: inline-block; */
+    color: grey;
+    top: 0.18em;
+    /* top is a constant for some reason. Keep it the same. */
+    /* padding-top: 3vw; turn back on if placing text in the middle of image again.*/ 
+    right: 1.4em;
+    font-size: 2.5rem;
+    /* white-space: nowrap; */
+
+
+}
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+a:visted {
+    color: rgb(130, 228, 110);
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #8EC37E;
+}
+
+a:focus {
+    color: black;
+}
