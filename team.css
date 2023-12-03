@@ -1,53 +1,8 @@
 /* padding shorthand: top right bottom left */
-* {
-    margin: 0;
-    padding: 0;
-}
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh;  This ensures the container takes up the full height of the viewport */   
-}
 
-body {
-    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
-    font-size: 1.1rem;
-}
 
-html {
-    background-color: white;
-}
-
-h1 {
-    font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans;
-    font-size: 3rem;
-    display: inline-block;
-    color: #353535;
-    padding-bottom: 0.4em;
-    /* display: inline; */
-    /* font-weight: bold; */
-}
-
-h3 {
-    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans;
-    font-size: 1.5rem;
-    color: #575757;
-}
-
-p{
-    color: #1E1E1E;
-}
-
-/* if somethings breaks, change 25vh back to 12rem, as well as #beautifulLandscape margin top back to 25rem */
-main {
-    padding-left: var(--big-padding);
-    padding-right: var(--big-padding);;
-    padding-top: 25vh;
-    transition: ease all .5s;
-}
-
+/* NAV BAR */
 #mainNav{
     position: fixed;
     width: 100%;
@@ -112,7 +67,7 @@ a:hover {
 
 a:focus {
     color: black;
-}
+} 
 
 #newsletter {
     display: block;
@@ -124,7 +79,6 @@ a:focus {
     height: 0;
     pointer-events: none; */
 }
-/* ---------------------------------- */
 
 #newsletterIcon {
     padding: .5em;
@@ -132,8 +86,6 @@ a:focus {
 #newsletterIconButton {
     position: absolute;
     border-radius: 1.5vh;
-    
-    
 }
 
 #newsletterIconVersion {
@@ -155,16 +107,95 @@ a:focus {
     pointer-events: none;
 }
 
+
+
+/* FONTS */
+@font-face {
+    font-family: AtkinsonHyperlegible;
+    src: url('fonts/AtkinsonHyperlegible-Regular.ttf');
+}
+
+@font-face {
+    font-family: AtkinsonHyperlegibleBold;
+    src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding-left: var(--big-padding);
+    padding-right: var(--big-padding);;
+    padding-top: 25vh;
+    transition: ease all .5s;
+}
+
+p{
+    color: #1E1E1E;
+}
+
+
+
+/* MINE */
+
 #mainTitle {
     font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans;
     font-size: 2rem;
     display: inline-block;
     color: #353535;
+    margin: 20px;
     /* padding-bottom: 0.4em; */
     /* display: inline; */
     /* font-weight: bold; */
 }
 
 #banner {
-    padding: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    opacity: 60%;
+}
+
+#TeamMembers {
+    display: flex;
+    flex-direction: row;
+    margin: 30px
+}
+
+.TeamMember {
+    margin: 3em;
+    padding: 1em;
+    flex: 1;
+    border-radius: 1em;
+    background-color: #7BAE7F;
+    box-shadow: 0 0 10px #1E1E1E;
+}
+
+#Outlier {
+    background-color: rgba(123, 174, 127, 0.4)
+    ;
+}
+
+.MemberContent {
+    margin-top: 0.5em;
+    line-height: 30px;
 }
