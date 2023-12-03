@@ -1,8 +1,42 @@
-/* padding shorthand: top right bottom left */
+@font-face {
+    font-family: AtkinsonHyperlegible;
+    src: url('fonts/AtkinsonHyperlegible-Regular.ttf');
+}
 
+@font-face {
+    font-family: AtkinsonHyperlegibleBold;
+    src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
+}
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/* NAV BAR */
+html {
+    background-color: white;
+}
+
+body {
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding-left: var(--big-padding);
+    padding-right: var(--big-padding);;
+    padding-top: 25vh;
+    transition: ease all .5s;
+}
+
+p{
+    color: #1E1E1E;
+}
+
 #mainNav{
     position: fixed;
     width: 100%;
@@ -107,63 +141,12 @@ a:focus {
     pointer-events: none;
 }
 
-
-
-/* FONTS */
-@font-face {
-    font-family: AtkinsonHyperlegible;
-    src: url('fonts/AtkinsonHyperlegible-Regular.ttf');
-}
-
-@font-face {
-    font-family: AtkinsonHyperlegibleBold;
-    src: url('fonts/AtkinsonHyperlegible-Bold.ttf');
-}
-
-/* GENERAL */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    background-color: white;
-}
-
-body {
-    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
-    font-size: 1.1rem;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    padding-left: var(--big-padding);
-    padding-right: var(--big-padding);;
-    padding-top: 25vh;
-    transition: ease all .5s;
-}
-
-p{
-    color: #1E1E1E;
-}
-
-
-
-/* MINE */
-
 #mainTitle {
     font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans;
     font-size: 2rem;
     display: inline-block;
     color: #353535;
     margin: 20px;
-    /* padding-bottom: 0.4em; */
-    /* display: inline; */
-    /* font-weight: bold; */
 }
 
 #banner {
@@ -181,6 +164,10 @@ p{
     margin: 30px
 }
 
+#Outlier {
+    background-color: rgba(123, 174, 127, 0.4);
+}
+
 .TeamMember {
     margin: 3em;
     padding: 1em;
@@ -188,11 +175,6 @@ p{
     border-radius: 1em;
     background-color: #7BAE7F;
     box-shadow: 0 0 10px #1E1E1E;
-}
-
-#Outlier {
-    background-color: rgba(123, 174, 127, 0.4)
-    ;
 }
 
 .MemberContent {
