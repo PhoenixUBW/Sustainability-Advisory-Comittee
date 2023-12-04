@@ -29,7 +29,7 @@ main {
 
     padding-left: var(--big-padding);
     padding-right: var(--big-padding);;
-    padding-top: 25vh;
+    padding-top: 10em;
     transition: ease all .5s;
 }
 
@@ -169,15 +169,19 @@ a:focus {
 }
 
 .TeamMember {
-    margin: 3em;
+    margin: 3%;
     padding: 1em;
     flex: 1;
     border-radius: 1em;
-    background-color: #7BAE7F;
-    box-shadow: 0 0 10px #1E1E1E;
+    background-color: #8DCDA7;    ;
+    box-shadow: 0 0 5px #1E1E1E;
 }
 
 .MemberContent {
     margin-top: 0.5em;
     line-height: 30px;
+}
+
+.MemberName {
+    font-size: 150%;
 }
