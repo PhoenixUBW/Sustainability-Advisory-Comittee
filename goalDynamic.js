@@ -20,7 +20,7 @@ const splashContents = new splash(
 'We have <span style="color: #538550">three</span> main goals.',
 'Each one is extremely important for the current and future generations living on planet earth.',
 "beautifulLandscape",
-"/images/beautiful-landscape.jpg",
+"images/beautiful-landscape.jpg",
 "beautiful landscape"
 );
 
