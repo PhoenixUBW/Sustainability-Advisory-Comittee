@@ -40,7 +40,7 @@ function loadTeamMember(teamMember) {
 }
 
 function loadTeamMemberContent(){
-    let displayTeamMember = teamMembers.map(loadTeamMember).join("");
+    const displayTeamMember = teamMembers.map(loadTeamMember).join("");
     section.innerHTML = displayTeamMember;
 }
 
