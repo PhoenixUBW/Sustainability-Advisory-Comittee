@@ -1,0 +1,3 @@
+images/beautiful-landscape.jpg
+images/poverty.jpg
+images/waterSanitation.jpg
