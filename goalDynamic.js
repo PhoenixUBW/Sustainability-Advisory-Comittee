@@ -20,7 +20,7 @@ const splashContents = new splash(
 'We have <span style="color: #538550">three</span> main goals.',
 'Each one is extremely important for the current and future generations living on planet earth.',
 "beautifulLandscape",
-"/images/beautiful-landscape.jpg",
+"images/beautiful-landscape.jpg",
 "beautiful landscape"
 );
 
@@ -35,56 +35,55 @@ console.log(content.length);
 const headingCenter = document.querySelector("#mainContent");
 
 function loadContent(){
-    let displayItem = content.map( (item) => {
-        return `
-        <section id="splashSection">
-            <article id="splash">
-                    <h1 id=${item.idM}>${item.headingTextContent}</h1>
-                    <h2 id=${item.idS}>${item.subheadingTextContent}</h2>
-                </article>
-                <img id="${item.imgId}" src="${item.imgSrc}" alt="${item.imgAlt}">
-        </section>
-
-
-        <section id="goals"> 
-                <article class="singleGoal" id="${goal1.articleId}">
-                    <img class="goalImage "id="${goal1.imgId}" src="${goal1.imgSrc}"alt="${goal1.imgAlt}">
-                    <h1 class="number" id="${goal1.numId}">${goal1.num}</h1>
-                    <div class="goalText" id="${goal1.textId}">
-                        <h1>${goal1.headingTxtContent}</h1>
-                        <p>${goal1.paragraph1TxtContent}</p>
-                        <br>
-                        <p>${goal1.paragraph2TxtContent} </p>
-                    </div>
-                </article>
-
-                <article class="singleGoal" id="${goal2.articleId}">
-                    <h1 class="number" id="${goal2.numId}">${goal2.num}</h1>
-                    <div class="goalText" id="${goal2.textId}">
-                        <h1>${goal2.headingTxtContent}</h1>
-                        <p>${goal2.paragraph1TxtContent}</p>
-                        <br>
-                        <p>${goal2.paragraph2TxtContent}</p>
-                    </div>
-                    <img class="goalImage "id="${goal2.imgId}" src="${goal2.imgSrc}"alt="${goal2.imgAlt}">
-                </article>
-
-                <article class="singleGoal" id="${goal3.articleId}">
-                    <img class="goalImage "id="${goal3.imgId}" src="${goal3.imgSrc}"alt="${goal3.imgAlt}">
-                    <h1 class="number" id="${goal3.numId}">${goal3.num}</h1>
-                    <div class="goalText" id="${goal3.textId}">
-                        <h1>${goal3.headingTxtContent}</h1>
-                        <p>${goal3.paragraph1TxtContent}</p>
-                        <br>
-                        <p>${goal3.paragraph2TxtContent} </p>
-                    </div>
-                </article>
-            </section>
-        `;
-    });
+    // let displayItem = content.map( (goals) => {
+    // });
     // displayItem = displayItem.join("");
-    console.log(displayItem);
-    headingCenter.innerHTML = displayItem;
+    // console.log(displayItem);
+    headingCenter.innerHTML = `
+    <section id="splashSection">
+        <article id="splash">
+                <h1 id=${splashContents.idM}>${splashContents.headingTextContent}</h1>
+                <h2 id=${splashContents.idS}>${splashContents.subheadingTextContent}</h2>
+            </article>
+            <img id="${splashContents.imgId}" src="${splashContents.imgSrc}" alt="${splashContents.imgAlt}">
+    </section>
+
+
+    <section id="goals"> 
+            <article class="singleGoal" id="${goal1.articleId}">
+                <img class="goalImage "id="${goal1.imgId}" src="${goal1.imgSrc}"alt="${goal1.imgAlt}">
+                <h1 class="number" id="${goal1.numId}">${goal1.num}</h1>
+                <div class="goalText" id="${goal1.textId}">
+                    <h1>${goal1.headingTxtContent}</h1>
+                    <p>${goal1.paragraph1TxtContent}</p>
+                    <br>
+                    <p>${goal1.paragraph2TxtContent} </p>
+                </div>
+            </article>
+
+            <article class="singleGoal" id="${goal2.articleId}">
+                <h1 class="number" id="${goal2.numId}">${goal2.num}</h1>
+                <div class="goalText" id="${goal2.textId}">
+                    <h1>${goal2.headingTxtContent}</h1>
+                    <p>${goal2.paragraph1TxtContent}</p>
+                    <br>
+                    <p>${goal2.paragraph2TxtContent}</p>
+                </div>
+                <img class="goalImage "id="${goal2.imgId}" src="${goal2.imgSrc}"alt="${goal2.imgAlt}">
+            </article>
+
+            <article class="singleGoal" id="${goal3.articleId}">
+                <img class="goalImage "id="${goal3.imgId}" src="${goal3.imgSrc}"alt="${goal3.imgAlt}">
+                <h1 class="number" id="${goal3.numId}">${goal3.num}</h1>
+                <div class="goalText" id="${goal3.textId}">
+                    <h1>${goal3.headingTxtContent}</h1>
+                    <p>${goal3.paragraph1TxtContent}</p>
+                    <br>
+                    <p>${goal3.paragraph2TxtContent} </p>
+                </div>
+            </article>
+        </section>
+    `;
 };
 
 
