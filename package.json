@@ -1,0 +1,17 @@
+{
+  "name": "sustainability-advisory-comittee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "nodemon": "^3.0.2"
+  }
+}
