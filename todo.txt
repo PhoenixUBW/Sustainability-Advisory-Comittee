@@ -1,0 +1,12 @@
+add names, bio, role, responsibility, contributions to team page
+make npm project
+use fetch api to dynamic stuff
+sign up page - data should be stored in json format on local server
+site guide - comment on division of work between team members, trello
+
+no depreciated tags?
+validate css files?
+
+DO NOT write data in a  GET handler
+DO NOT use POST to display a page
+DO NOT use query parameters with POST

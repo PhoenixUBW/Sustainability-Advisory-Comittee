@@ -47,9 +47,7 @@ function loadTeamMemberContent(){
 pageContentLoaders = [loadHeader,loadBanner,loadTeamMemberContent]
 
 function loadFullContent(pageContentLoaders) {
-    for (const loader of pageContentLoaders){
-        loader()
-    }
+    pageContentLoaders.forEach(loader => loader());
 }
 
 window.addEventListener("DOMContentLoaded", () => loadFullContent(pageContentLoaders), false);
