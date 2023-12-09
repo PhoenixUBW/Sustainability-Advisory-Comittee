@@ -1,7 +1,5 @@
 add names, bio, role, responsibility, contributions to team page
-make npm project
-use fetch api to dynamic stuff
-sign up page - data should be stored in json format on local server
+sign up page - use fetch, data should be stored in json format on local server
 site guide - comment on division of work between team members, trello
 
 no depreciated tags?
