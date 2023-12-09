@@ -1,4 +1,4 @@
-class splash {
+class Splash {
     constructor(idM, idS, headingTextContent, subheadingTextContent, imgId, imgSrc, imgAlt) {
         this.idM = idM;
         this.idS = idS;
@@ -7,38 +7,33 @@ class splash {
         this.imgId = imgId;
         this.imgSrc = imgSrc;
         this.imgAlt = imgAlt;
-
     }
 }
 
-
-
-
-const splashContents = new splash(
-"mainHeading",
-"subheading",
-'We have <span style="color: #538550">three</span> main goals.',
-'Each one is extremely important for the current and future generations living on planet earth.',
-"beautifulLandscape",
-"images/beautiful-landscape.jpg",
-"beautiful landscape"
-);
-
-
-const content=[];
-
-content.push(splashContents);
-
-console.log(content.length);    
-
+class Goal {
+    constructor(articleId, imgId, imgSrc, imgAlt, numId, num, textId, headingTxtContent, paragraph1TxtContent, paragraph2TxtContent) {
+        this.articleId = articleId;
+        this.imgId = imgId;
+        this.imgSrc = imgSrc;
+        this.imgAlt = imgAlt;
+        this.numId = numId;
+        this.num = num;
+        this.textId = textId;
+        this.headingTxtContent = headingTxtContent;
+        this.paragraph1TxtContent = paragraph1TxtContent;
+        this.paragraph2TxtContent = paragraph2TxtContent;
+    }
+}
 
 const headingCenter = document.querySelector("#mainContent");
 
+const splashContents = new Splash("mainHeading","subheading",'We have <span style="color: #538550">three</span> main goals.','Each one is extremely important for the current and future generations living on planet earth.',"beautifulLandscape","images/beautiful-landscape.jpg","beautiful landscape");
+const          goal1 = new Goal("Water","waterSanitationImg",'images/waterSanitation.jpg','children sharing water happy',"num1","1.","waterText",'Clean <span style="color: #006B8F">water</span> and <span style="color: #006B8F">sanitation</span>',"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+const          goal2 = new Goal("Hunger","hungerImg",'images/hunger.jpg','people sharing rations',"num2","2.","hungerText",'No <span style="color: #A21C00">Hunger</span>',"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+const          goal3 = new Goal("Poverty","povertyImg",'images/poverty.jpg','child looking at slums',"num3","3.","povertyText",'No <span style="color: #0E4D0A">Poverty</span>','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.');
+
+
 function loadContent(){
-    // let displayItem = content.map( (goals) => {
-    // });
-    // displayItem = displayItem.join("");
-    // console.log(displayItem);
     headingCenter.innerHTML = `
     <section id="splashSection">
         <article id="splash">
@@ -86,64 +81,8 @@ function loadContent(){
     `;
 };
 
-
-
-class goal {
-    constructor(articleId, imgId, imgSrc, imgAlt, numId, num, textId, headingTxtContent, paragraph1TxtContent, paragraph2TxtContent) {
-        this.articleId = articleId;
-        this.imgId = imgId;
-        this.imgSrc = imgSrc;
-        this.imgAlt = imgAlt;
-        this.numId = numId;
-        this.num = num;
-        this.textId = textId;
-        this.headingTxtContent = headingTxtContent;
-        this.paragraph1TxtContent = paragraph1TxtContent;
-        this.paragraph2TxtContent = paragraph2TxtContent;
-
-    }
-}
-const goal1 = new goal(
-    "Water",
-    "waterSanitationImg",
-    'images/waterSanitation.jpg',
-    'children sharing water happy',
-    "num1",
-    "1.",
-    "waterText",
-    'Clean <span style="color: #006B8F">water</span> and <span style="color: #006B8F">sanitation</span>',
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    );
-
-
-const goal2 = new goal(
-    "Hunger",
-    "hungerImg",
-    'images/hunger.jpg',
-    'people sharing rations',
-    "num2",
-    "2.",
-    "hungerText",
-    'No <span style="color: #A21C00">Hunger</span>',
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    );
-
-const goal3 = new goal(
-    "Poverty",
-    "povertyImg",
-    'images/poverty.jpg',
-    'child looking at slums',
-    "num3",
-    "3.",
-    "povertyText",
-    'No <span style="color: #0E4D0A">Poverty</span>',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    );
-
 window.addEventListener("DOMContentLoaded", loadContent, false);
+
 
 
 // in order to get script to only run once this content has been dynamically loaded.
