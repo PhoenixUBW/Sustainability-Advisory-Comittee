@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="goals.css">
 
     <script defer src="goals.js"></script>
+    <script defer src="form.js"></script>
     
     <!-- This script is run through goalDynamic.js now, as it needs to run only after goalDynamic has finished in order to get the elements properly. -->
     <!-- <script defer src="swap.js"></script> -->
@@ -46,12 +47,13 @@
                 <h3 id="signUpPlead">Sign up for our newsletter!</h3>
                 <form id="form" method="post" action="" >
                     <fieldset>
-                        <input    id="firstname" required type="name" placeholder="First Name" class="grid-item"  >
+                        <input    id="first-name" required type="name" placeholder="First Name" class="grid-item"  >
                         <input    id="surname"   required type="name" placeholder="Last Name" class="grid-item" >
                         <input    id="email" type="email" placeholder="Email Address" class="grid-item" >
                         <textarea id="comments" placeholder="Comments" class="grid-item" ></textarea>
                     </fieldset>
                     <button id="submit"><h4>Submit</h4></button>
+                    <div id="test-response"></div>
                 </form>
             </div>
 
