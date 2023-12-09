@@ -13,27 +13,32 @@ const archie = new TeamMember("Archie","Lorem ipsum dolor sit amet, consectetur 
 
 const teamMembers = [];
 teamMembers.push(aidan);
-teamMembers.push(israel);
 teamMembers.push(archie);
+teamMembers.push(israel);
 
 const header = document.querySelector("#header");
+const article = document.querySelector("#intro");
 const banner = document.querySelector("#ivy-banner");
 const section = document.querySelector("#TeamMembers");
 
 function loadHeader() {
-    header.innerHTML = `<h2 id="mainTitle">Our Team</h2>`;
+    header.innerHTML = `<h1 id="mainTitle">Our <span style="color: #538550">Team</span></h1>`;
+}
+
+function loadIntro() {
+    article.innerHTML = `<p id="intro">Meet the team behind the development of this site.</p>`
 }
 
 function loadBanner() {
     banner.innerHTML = `<figure>
-                            <img id="banner" alt="Green Ivy Banner" src="images/ivy pexels.jpeg"> 
-                        </figure>`; // alt was "green-banner"
+                            <img id="banner" alt="Zebra Banner" src="images/pexels-zebra.jpeg"> 
+                        </figure>`;
 }
 
 function loadTeamMember(teamMember) {
     return `
     <article class="TeamMember" id=${teamMember.id}>
-        <h3 class="MemberName">${teamMember.name}</h3>
+        <h1 class="MemberName">${teamMember.name}</h1>
         <p class="MemberContent">${teamMember.content}</p>
     </article>
             `;
@@ -44,7 +49,7 @@ function loadTeamMemberContent(){
     section.innerHTML = displayTeamMember;
 }
 
-pageContentLoaders = [loadHeader,loadBanner,loadTeamMemberContent]
+pageContentLoaders = [loadHeader,loadIntro,loadBanner,loadTeamMemberContent]
 
 function loadFullContent(pageContentLoaders) {
     pageContentLoaders.forEach(loader => loader());
