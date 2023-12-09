@@ -87,5 +87,5 @@ window.addEventListener("DOMContentLoaded", loadContent, false);
 
 // in order to get script to only run once this content has been dynamically loaded.
 let script = document.createElement('script');
-script.src = 'swap.js';
+script.src = 'goalsSwap.js';
 document.head.appendChild(script);
