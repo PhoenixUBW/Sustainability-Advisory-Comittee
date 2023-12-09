@@ -855,4 +855,10 @@ fieldset input:focus, textarea:focus{
 }
 
 @media only screen and (min-width: 1800px) {#Poverty {margin-top: 15rem;}}
-@media only screen and (min-width: 2200px){#Poverty {margin-top: 15rem;}}
+@media only screen and (min-width: 2160px){#Poverty {margin-top: 17rem;}}
+@media only screen and (min-width: 2300px){#Poverty {margin-top: 20rem;}}
+@media only screen and (min-width: 2600px){#Poverty {margin-top: 25rem;}}
+@media only screen and (min-width: 2800px){#Poverty {margin-top: 30rem;}}
+@media only screen and (min-width: 3400px){#Poverty {margin-top: 32.5rem;}}
+@media only screen and (min-width: 3600px){#Poverty {margin-top: 35rem;}}
+@media only screen and (min-width: 3840px){#Poverty {margin-top: 38rem;}}
