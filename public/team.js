@@ -22,16 +22,13 @@ const banner = document.querySelector("#ivy-banner");
 const section = document.querySelector("#TeamMembers");
 
 function loadHeader() {
-    header.innerHTML = `<h1 id="mainTitle">Our <span style="color: #538550">Team</span></h1>`;
-}
-
-function loadIntro() {
-    article.innerHTML = `<p id="intro">Meet the team behind the development of this site.</p>`
+    header.innerHTML = `<h1 id="mainTitle">Our <span style="color: #538550">Team</span></h1>
+                        <p id="intro">Meet the team behind the development of this site.</p>`;
 }
 
 function loadBanner() {
     banner.innerHTML = `<figure>
-                            <img id="banner" alt="Zebra Banner" src="images/pexels-zebra.jpeg"> 
+                            <img id="banner" alt="Zebra Banner" src="images/pexels-zebra.jpg"> 
                         </figure>`;
 }
 
@@ -49,7 +46,7 @@ function loadTeamMemberContent(){
     section.innerHTML = displayTeamMember;
 }
 
-pageContentLoaders = [loadHeader,loadIntro,loadBanner,loadTeamMemberContent]
+pageContentLoaders = [loadHeader,loadBanner,loadTeamMemberContent]
 
 function loadFullContent(pageContentLoaders) {
     pageContentLoaders.forEach(loader => loader());
