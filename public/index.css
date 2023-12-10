@@ -355,6 +355,7 @@ a:focus {
     color: black;
 }
 #bigHeading{
+    display: block;
     text-align: center;
     font-size: 4rem;
 }
