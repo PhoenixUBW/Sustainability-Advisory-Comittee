@@ -173,5 +173,4 @@ function loadContent(){
     </article>
     `;
 }
-    window.addEventListener("DOMContentLoaded",loadContent,false);
-    //dynamically load Team Section
+window.addEventListener("DOMContentLoaded",loadContent,false);

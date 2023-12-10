@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAC | Home</title>
     <link rel="icon" type="image/x-icon" href="images/SAC-ICO32x.png">
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="index.css">
     <script src="slider.js"defer></script>
     <script src="index.js"defer></script>
     <script src="https://kit.fontawesome.com/b02943948b.js" crossorigin="anonymous"></script>
@@ -29,6 +29,34 @@
         <main>
             <section id="mainContent"></section>
         </main>
+        <footer>
+            <img id="footerLogo" alt="SAC Logo" src="images/SustainabilityAdvisoryCommittee-blackbg-curved.png">
+            <div class="pages">
+                <h3>Pages</h3>
+                <ul class="pagesList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="newsletter.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div id="formContainer">
+                <h3 id="signUpPlead">Sign up for our newsletter!</h3>
+                <form id="form" method="post" action="" >
+                    <fieldset>
+                        <input    id="first-name" required type="name" placeholder="First Name" class="grid-item"  >
+                        <input    id="surname"   required type="name" placeholder="Last Name" class="grid-item" >
+                        <input    id="email" type="email" placeholder="Email Address" class="grid-item" >
+                        <textarea id="comments" placeholder="Comments" class="grid-item" ></textarea>
+                    </fieldset>
+                    <button id="submit"><h4>Submit</h4></button>
+                    <div id="test-response"></div>
+                </form>
+            </div>
+
+            <p id="copyright">Copyright ©2023 Sustainability Advisory Committee     |    Committee: <a href="mailto:A.Leonard@uea.ac.uk">Aidan Leonard</a>,<a href="mailto:abc@A.McCulloch@uea.ac.uk"> Archie McCulloch</a>,<a href="mailto:I.Kuye@uea.ac.uk"> Israel Kuye</a></p>
+            
+        </footer>
     </div>  
     
 </body>
