@@ -1,4 +1,4 @@
-const submit = document.getElementById('submit');
+const submit = document.getElementById('submit-footer');
 
 function processSubmit(e){
     e.preventDefault();
