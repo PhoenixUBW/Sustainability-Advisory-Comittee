@@ -141,7 +141,7 @@ function loadContent(){
         <button id=${ourGoal.slideIDLe}><i class="fa-solid fa-arrow-right"></i></button>
         <button id=${ourGoal.slideIDRi}><i class="fa-solid fa-arrow-right"></i></button>
         <h1 class= ${ourGoal.goalClass} id=${ourGoal.goalID}>${ourGoal.goalText}</h1>
-        <button class=${ourGoal.buttonClass}><a href="team.html">${ourGoal.buttonText}</a></button>
+        <button class=${ourGoal.buttonClass}><a href="goals.html">${ourGoal.buttonText}</a></button>
     </article>
 
     <section id="goals"> 
