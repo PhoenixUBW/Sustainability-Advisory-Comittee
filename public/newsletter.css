@@ -254,6 +254,10 @@ a:focus {
     color: #353535;
 }
 
+#form-main{
+    padding-bottom: 2rem;
+}
+
 
 main .GridItem{
     color: black;
@@ -402,7 +406,9 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 
 
 
-
+#why-and-previous{
+    margin-right: calc(var(--big-padding) + 10vw);
+}
 
 
 .Submit{
@@ -424,6 +430,9 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 @media only screen and (max-width: 1500px) {
     #newsletter-image{
     right: calc(var(--medium-padding));}
+    #why-and-previous{
+        margin-right: calc(var(--big-padding) - 10vw);
+    }
 }
 
 @media only screen and (max-width: 1427px) {
@@ -456,6 +465,8 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         padding-left: var(--medium-padding);
         padding-right: var(--medium-padding); 
     }
+
+
 
     
 }
@@ -517,6 +528,9 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         left: var(--medium-padding)
         
     }
+    #why-and-previous{
+        margin-right: auto;
+    }
     .signUpPlead {
         text-align: left;
         left: 0px;
@@ -529,6 +543,17 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 
     #copyright {
         top: 12rem;
+    }
+
+    #form-main{
+    padding-bottom: 15rem;
+}
+
+
+
+
+    footer {
+        height: 23rem;
     }
 }
 
@@ -603,7 +628,11 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         margin:  0;
     }
 
-    
+    #form-main{
+    padding-bottom: 25rem;
+}
+
+
     #plead-main{
         text-align: left;
     }
