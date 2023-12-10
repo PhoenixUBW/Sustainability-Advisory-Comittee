@@ -146,21 +146,21 @@ function loadContent(){
 
     <section id="goals"> 
         <article class=${goal1.articleClass} id=${goal1.articleID}>
-            <img class=${goal1.imgClass}id=${goal1.imgID} src=${goal1.imgSrc}alt=${goal1.imgAlt}>
+            <img class=${goal1.imgClass} id=${goal1.imgID} src=${goal1.imgSrc} alt=${goal1.imgAlt}>
             <div class=${goal1.goalClass}>
                 <h1 class=${goal1.textClass}>${goal1.goalText}</h1>
             </div>
         </article>
             
         <article class=${goal2.articleClass} id=${goal2.articleID}>
-        <img class=${goal2.imgClass}id=${goal2.imgID} src=${goal2.imgSrc}alt=${goal2.imgAlt}>
+        <img class=${goal2.imgClass} id=${goal2.imgID} src=${goal2.imgSrc} alt=${goal2.imgAlt}>
         <div class=${goal2.goalClass}>
                 <h1 class=${goal2.textClass}>${goal2.goalText}</h1>
             </div>
         </article>
 
         <article class=${goal3.articleClass} id=${goal3.articleID}>
-        <img class=${goal3.imgClass}id=${goal3.imgID} src=${goal3.imgSrc}alt=${goal3.imgAlt}>
+        <img class=${goal3.imgClass} id=${goal3.imgID} src=${goal3.imgSrc} alt=${goal3.imgAlt}>
         <div class=${goal3.goalClass}>
                 <h1 class=${goal3.textClass}>${goal3.goalText}</h1>
             </div>
