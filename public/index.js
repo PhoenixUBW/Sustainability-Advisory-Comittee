@@ -95,7 +95,7 @@ const goal3=new threeGoals(
     "Poverty",
     "goalImage",
     "povertyImg",
-    "images/poverty.jpg",
+    "public/images/poverty.jpg",
     "child looking at slums",
     "goalText",
     "goalCentre",
