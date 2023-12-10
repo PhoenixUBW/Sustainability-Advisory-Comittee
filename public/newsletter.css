@@ -424,6 +424,11 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     margin-right: calc(var(--big-padding) + 10vw);
 }
 
+#previousArtcile {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 
 
 
