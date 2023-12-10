@@ -43,6 +43,7 @@ h2 {
     font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
     font-size: 1.5rem;
     color: #575757;
+    padding-bottom: 1rem;
 }
 
 h3{
@@ -243,6 +244,9 @@ a:focus {
     /* width: 6rem; */
 }
 
+#why-and-previous {
+    padding-bottom: 5rem;
+}
 
 #fieldset-main input::placeholder, #fieldset-main textarea::placeholder {
     color: rgb(87, 87, 87);
@@ -254,10 +258,15 @@ a:focus {
     color: #353535;
 }
 
+#form-main{
+    padding-bottom: 2rem;
+}
+
 
 main .GridItem{
     color: black;
     background-color:#d3d3d3;
+
 }
 
 
@@ -366,6 +375,9 @@ fieldset {
     width: 0px;
 }
 
+fieldset input:focus, textarea:focus{
+    outline: solid 2px rgb(64, 64, 64);
+}
 
 
 input {
@@ -398,13 +410,6 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 }
 
 
-
-
-
-
-
-
-
 .Submit{
     margin-left: auto;
     margin-right: auto;
@@ -412,6 +417,15 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     text-align: center;
     width: 6rem;
 }
+
+
+
+
+#why-and-previous{
+    margin-right: calc(var(--big-padding) + 10vw);
+}
+
+
 
 
 
@@ -424,6 +438,9 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 @media only screen and (max-width: 1500px) {
     #newsletter-image{
     right: calc(var(--medium-padding));}
+    #why-and-previous{
+        margin-right: calc(var(--big-padding) - 10vw);
+    }
 }
 
 @media only screen and (max-width: 1427px) {
@@ -456,6 +473,8 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         padding-left: var(--medium-padding);
         padding-right: var(--medium-padding); 
     }
+
+
 
     
 }
@@ -517,6 +536,9 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         left: var(--medium-padding)
         
     }
+    #why-and-previous{
+        margin-right: auto;
+    }
     .signUpPlead {
         text-align: left;
         left: 0px;
@@ -529,6 +551,17 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 
     #copyright {
         top: 12rem;
+    }
+
+    #form-main{
+    padding-bottom: 15rem;
+}
+
+
+
+
+    footer {
+        height: 23rem;
     }
 }
 
@@ -603,7 +636,11 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         margin:  0;
     }
 
-    
+    #form-main{
+    padding-bottom: 25rem;
+}
+
+
     #plead-main{
         text-align: left;
     }
