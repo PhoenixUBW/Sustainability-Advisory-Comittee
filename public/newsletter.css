@@ -519,6 +519,7 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     #newsletter-image{
         visibility: hidden;
         /* inset: 0; */
+        transition: none;
     }
     #footerLogo {
         position: absolute;
