@@ -20,7 +20,7 @@ prevArticles.push(article3);
 function loadFormContainer() {
     formContainerDiv.innerHTML = `  
     <img id="newsletter-image" alt="SAC Logo" src="images/SACEdge.png">
-    <h1 class="signUpPlead" id="plead-main">Sign up for our newsletter!</h1>
+    <h1 class="signUpPlead" id="plead-main">Sign up for our <span class="green">Newsletter!</span></h1>
     <form id="form-main" method="post" action="" >
         <fieldset id="fieldset-main">
             <input    id="first-name-main" required type="name" placeholder="First Name" class="GridItem"  >
