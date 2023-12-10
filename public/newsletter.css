@@ -91,17 +91,6 @@ main * {
 
 
 
-#beautifulLandscape {
-    display: block;
-    margin-top: 40vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
-    border-radius: 8vw;
-}
-
-
 .logo {
     position: absolute;
     height: 5rem;
