@@ -13,7 +13,7 @@ const head= new heading(
     "bigHeading",
     "mainHeading",
     'Making a difference <span style="color: #538550">together</span>',
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "Empowering Global Change. We are advocating and implementing the United Nations' sustainability goals for a more resilient and equitable future.",
     "slideImg",
     "images/beautiful-landscape.jpg",
     "beautiful landscape")
