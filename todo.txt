@@ -1,10 +1,5 @@
 add names, bio, role, responsibility, contributions to team page
-sign up page - use fetch, data should be stored in json format on local server
 site guide - comment on division of work between team members, trello
+does sign up page work? - json
 
-no depreciated tags?
-validate css files?
-
-DO NOT write data in a  GET handler
-DO NOT use POST to display a page
-DO NOT use query parameters with POST
+validate files
