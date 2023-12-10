@@ -15,7 +15,7 @@ const head= new heading(
     'Making a difference <span style="color: #538550">together</span>',
     "Empowering Global Change. We are advocating and implementing the United Nations' sustainability goals for a more resilient and equitable future.",
     "slideImg",
-    "images/beautiful-landscape.jpg",
+    "images/beautiful-landscape-2.jpg",
     "beautiful landscape")
 
 const topContent=[];
@@ -73,7 +73,7 @@ const goal1=new threeGoals(
     "Water",
     "goalImage",
     "waterSanitisationImg",
-    "images/waterSanitation.jpg",
+    "images/boy-tap.jpg",
     "children sharing water happy",
     "goalText",
     "goalCentre",
@@ -84,7 +84,7 @@ const goal2=new threeGoals(
     "Water",
     "goalImage",
     "waterSanitisationImg",
-    "images/waterSanitation.jpg",
+    "images/hunger-walking.jpg",
     "children sharing water happy",
     "goalText",
     "goalCentre",
@@ -95,7 +95,7 @@ const goal3=new threeGoals(
     "Poverty",
     "goalImage",
     "povertyImg",
-    "images/poverty.jpg",
+    "images/poverty-city.jpg",
     "child looking at slums",
     "goalText",
     "goalCentre",
