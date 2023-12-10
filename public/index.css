@@ -386,7 +386,7 @@ h2{
     font-size: 1.5rem;
     padding-bottom: 5%;
 }
-#imageSliderRight{
+/* #imageSliderRight{
     display: block;
     padding: 5%;
     position: absolute;
@@ -397,7 +397,7 @@ h2{
     position: absolute;
     margin-left: 15%;
     rotate: 180deg;
-}
+} */
 
 
 h4 {
@@ -814,16 +814,31 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     #goals{
         padding-bottom: 20%;
     }
-    #imageSliderRight{
-        font-size: 2rem;
-        margin-left: 250%;
-    }
-    #imageSliderLeft{
+    /* #imageSliderRight{
         font-size: 2rem;
         margin-left: 50%;
     }
+    #imageSliderLeft{
+        font-size: 2rem;
+        margin-left: var(--big-padding);
+        
+    
+    } */
     #submit{
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
     }
 }    
+.ArrowButton{
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 880px){
+
+}
+
+#imageSliderLeft{
+    rotate: 180deg;
+}
