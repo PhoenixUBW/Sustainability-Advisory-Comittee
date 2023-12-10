@@ -99,9 +99,11 @@ main {
     padding-left: var(--big-padding);
     padding-right: var(--big-padding);;
     padding-top: 25vh;
-    transition: ease all .5s;
 }
 
+main * {
+    transition: ease all .5s;
+}
 
 
 

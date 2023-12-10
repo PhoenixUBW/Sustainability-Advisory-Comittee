@@ -34,6 +34,9 @@ main {
     padding-left: var(--big-padding);
     padding-right: var(--big-padding);;
     padding-top: 10em;
+}
+
+main * {
     transition: ease all .5s;
 }
 
