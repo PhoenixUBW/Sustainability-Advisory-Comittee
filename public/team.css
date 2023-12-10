@@ -1,3 +1,9 @@
+:root {
+    --big-padding: 12rem;
+    --medium-padding: 5rem;
+    --small-padding: 1.5rem;
+}
+
 @font-face {
     font-family: AtkinsonHyperlegible;
     src: url('fonts/AtkinsonHyperlegible-Regular.ttf');
@@ -25,8 +31,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    text-align: center;
-
     padding-left: var(--big-padding);
     padding-right: var(--big-padding);;
     padding-top: 10em;
@@ -36,6 +40,14 @@ main {
 p{
     color: #1E1E1E;
 }
+
+h1 {
+    font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+/* NAVBAR */
 
 #mainNav{
     position: fixed;
@@ -66,7 +78,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     white-space: nowrap;
-    padding: 6%;
+    padding: 0.7em;
 }
 
 button:hover {
@@ -106,12 +118,15 @@ a:focus {
 #newsletter {
     display: block;
     position: absolute;
-    /* right: var(--big-padding); */
-    right: 4.76rem;
+    right: var(--big-padding);
     top: -0.6em;
-    /* opacity: 0;
+    opacity: 0;
     height: 0;
-    pointer-events: none; */
+    pointer-events: none;
+}
+
+#newsletterButton {
+    padding: 6%;
 }
 
 #newsletterIcon {
@@ -120,6 +135,7 @@ a:focus {
 #newsletterIconButton {
     position: absolute;
     border-radius: 1.5vh;
+    padding: 6%;
 }
 
 #newsletterIconVersion {
@@ -133,20 +149,172 @@ a:focus {
     /* hides by making height 0, pointer events none, opacity 0.*/
 }
 
-#logo {
+.logo {
     position: absolute;
     height: 5rem;
-    left: 4.76rem;
     padding-left: var(--big-padding);
     pointer-events: none;
 }
 
-#mainTitle {
-    font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans;
-    font-size: 2rem;
+
+
+h4 {
+    font-family: 'AtkinsonHyperlegibleBold', Verdana, Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+h3 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+#footerLogo{
+    height: 10vw;
+    max-height: 20rem;
+    position: absolute;
+}
+footer{
+    padding-top: 2rem;
+    background-color: black;
+    height: 23rem;
+    padding-left: var(--big-padding);
+    padding-right: var(--big-padding);
+
+}
+
+footer p{
+    color: white;
+}
+
+footer li{
+    color: #BCBCBC;
+}
+
+#copyright {
+    display: block;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.506);
+    left: 0px;
+    right: 0px;
+    padding: 8px;
+    top: 0rem;
+    border-radius: 8vh;
+    color: rgb(199, 199, 199);
+    font-size: 0.8rem;
+}
+#copyright a:not(:hover){
+    color: rgb(218, 218, 218);
+} 
+
+.pages{
+    float: right;
+}
+
+.pages h3{
     display: inline-block;
-    color: #353535;
-    margin: 20px;
+}
+
+.pages li{
+    padding-bottom: 0.7rem;
+}
+.pages a{
+    color: #BCBCBC;
+    display:inline;
+    width: 10px;
+}
+
+.pages a:hover{
+    color: #8EC37E;
+}
+
+#signUpPlead{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    left: -7rem;
+    text-align: center;
+}
+
+#formContainer{
+    display: inline-block;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+fieldset {
+    margin: 0 auto;
+    padding-left: 3.65rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    grid-template-rows: 3fr, 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 16px; 
+    border: none;   
+    padding-bottom: 1.5rem;
+    width: 0px;
+
+}
+
+input {
+    width: auto;
+}
+
+textarea {
+    width: auto;
+}
+
+.grid-item{
+    background-color:#272727;
+    width: 15rem;
+    padding: 14px 14px;
+    border: none;
+    outline: white;
+    color: rgb(218, 218, 218);
+    font-size: 0.9rem;
+    resize: none;
+    border-radius: 0.3rem;
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+}
+
+fieldset input::placeholder, textarea::placeholder {
+    color: rgb(234, 234, 234);
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+}
+
+fieldset input:focus, textarea:focus{
+    outline: solid 2px rgb(64, 64, 64);
+}
+
+#submit{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: 6rem;
+}
+
+
+
+#firstname { grid-area: 1 / 1 / 2 / 2; }
+#surname { grid-area: 2 / 1 / 3 / 2; }
+#email { grid-area: 3 / 1 / 4 / 2; }
+#comments { grid-area: 1 / 2 / 4 / 4; } 
+
+
+
+#intro {
+    font-family: 'AtkinsonHyperlegible', Verdana, Arial, sans-serif;
+    font-weight: 100;
+    word-wrap: break-word;
+    line-height: 1.6em;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #575757;
 }
 
 #banner {
@@ -155,26 +323,22 @@ a:focus {
     max-width: 100%;
     height: auto;
     margin: 20px 0;
-    opacity: 60%;
+    border-radius: 4vw;
 }
 
 #TeamMembers {
     display: flex;
-    flex-direction: row;
-    margin: 30px
-}
-
-#Outlier {
-    background-color: rgba(123, 174, 127, 0.4);
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .TeamMember {
-    margin: 3%;
-    padding: 1em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     flex: 1;
-    border-radius: 1em;
-    background-color: #8DCDA7;    ;
-    box-shadow: 0 0 5px #1E1E1E;
 }
 
 .MemberContent {
@@ -182,6 +346,45 @@ a:focus {
     line-height: 30px;
 }
 
-.MemberName {
-    font-size: 150%;
+header {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1427px){
+    footer {
+        padding-left: var(--medium-padding);
+        padding-right: var(--medium-padding);
+    }
+}
+
+@media only screen and (max-width: 1427px) {
+    #newsletter {
+        right: var(--medium-padding);
+        transition: ease all .5s;
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    #newsletter {
+        /* visibility: visible; */
+        pointer-events: all;
+        opacity: 1;
+        transition: ease-out all .5s;
+    }
+}
+
+@media only screen and (max-width: 1427px){
+    .logo {
+        padding-left: var(--medium-padding);
+        transition: ease all .5s;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #newsletterIconVersion {
+        /* visibility: visible; */
+        opacity: 1;
+        pointer-events: all;
+        transition: ease-out all .5s;
+    }
 }
