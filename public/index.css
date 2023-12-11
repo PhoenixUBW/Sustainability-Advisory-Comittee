@@ -83,7 +83,6 @@ p{
 }
 #subheading {
     font-weight: 100;
-    /* padding-top: 0.6em; */
     word-wrap: break-word;
     line-height: 1.6em;
     width: 100%;
@@ -91,10 +90,6 @@ p{
 
 }
 
-
-
-
-/* if somethings breaks, change 25vh back to 12rem, as well as #beautifulLandscape margin top back to 25rem */
 main {
     padding-left: var(--big-padding);
     padding-right: var(--big-padding);;
@@ -109,7 +104,7 @@ main * {
 
 #slideImg {
     display: block;
-    margin-top: 40vh;
+    margin-top: 35vh;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -127,7 +122,6 @@ main * {
 
 
 #mainNav{
-    /* makes the navbar stay on top */
     position: fixed;
     width: 100%;
     background: white;
@@ -143,15 +137,13 @@ main * {
     
 }
 
-
 .nav {
     display: inline-block;
     padding-top: 2rem;
-    /* creates spaces between the links */
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
-/* default settings for button */
+
 button {
     color: white;
     background-color: #7BAE7F;
@@ -168,22 +160,12 @@ button:hover {
     background-color: #335c27;
 }
 
-/* hr{
-    border-bottom: 1px solid rgb(238, 238, 238);
-    border-top: 0px solid rgb(238, 238, 238);
-    border-left: 0px solid rgb(238, 238, 238);
-    border-right: 0px solid rgb(238, 238, 238);
-
-} */
-
 
 
 .fa-circle {
     color: #8EC37E;
     scale: 0.3;
 }
-
-/* THIS IS THE NORMAL ONE */
 
 #newsletter {
     display: block;
@@ -215,25 +197,17 @@ button:hover {
     opacity: 0;
     height: 0%;
     pointer-events: none;
-    /* hides by making height 0, pointer events none, opacity 0.*/
 }
 
 /* ------------------------------------ */
 
 .goalImage{
     display: inline;
-
     border-radius: 4vw;
-    /* might be optional: display might be all you need */
-    /* float: left; */
-    /*  ----*/
     margin-right: 20vw;
-    /* old values: w: 20vh, h: 20vh */
     width: 20vw;
     height: 20vw;
     object-fit: cover;
-    
-
 }
 
 #waveTop{
@@ -254,76 +228,38 @@ button:hover {
 }
 #hungerImg{
     position: absolute;
-    /* float: right; */
-    /* this for some reasons is make or break */
     right: var(--big-padding);
     margin-right: 0vw;
-    /* display: block; */
-    
-
-    
-
 }
 #hungerText {
-    /* display: block; */
     max-width: 50%;
     
 }
-/* aspect-ratio: 1.1; */
 
-#Poverty{
-    margin-top: 15rem;
-}
 #goals {
-    margin-top: 10vw;
-    /* temporary: */
-    /* margin-bottom: 100vw; */
-    
-    
+    margin-top: 10vw; 
 }
+
 .goalText {
     display: block;
     overflow: auto;
-    /* controls if the text is inline with the image. Changes in this will affect .number*/
-    /* padding-top: 3vw;  */
-    margin-left: -2em;
-
-    
 }
 
 
 .singleGoal{
     display: flex;
     margin-bottom: 8rem; 
-    /* - fixes the following with two items */
 
 }
-/* 
-#Poverty {
-    margin-top: 10rem;
-} */
-
-/* #Hunger {
-    padding-left: 0;
-    margin-left: 0;
-    left: 0;
-} */
 .number{
-    /* float: left; */
     position: relative;
-    /* display: inline-block; */
     color: grey;
     top: 0.18em;
-    /* top is a constant for some reason. Keep it the same. */
-    /* padding-top: 3vw; turn back on if placing text in the middle of image again.*/ 
     right: 1.4em;
     font-size: 2.5rem;
-    /* white-space: nowrap; */
     padding-top: 14%;
 
 }
-
-
 
 
 
@@ -365,15 +301,15 @@ h2{
     display: block;
     color: #353535;
     padding-bottom: 0.4em;
-    /* font-weight: bold; */
 }
 .learnMore{
     padding: 1rem ;
     font-size: 1.2rem;
+    margin-bottom: 5%;
     border-radius: 1rem;
 }
 .goalCentre{
-    padding-top: 28%;
+    padding-top: 21%;
 }
 #cleanWater{
     padding-top: 5%;
@@ -387,9 +323,11 @@ h2{
     padding-bottom: 5%;
 }
 #imageSliderRight{
+    display: inline;
     padding: 3rem;
 }
 #imageSliderLeft{
+    display: inline;
     padding: 3rem;
 }
 
@@ -414,7 +352,6 @@ footer{
     bottom: 0;
     padding-top: 2rem;
     background-color: black;
-    /* height: 23rem; */
     padding-left: var(--big-padding);
     padding-right: var(--big-padding);
     
@@ -572,24 +509,26 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         padding-right: var(--medium-padding); 
     }
 
-}
+    #imageSliderLeft{
+        margin-left: 28%;
+        margin-right: 3%;
+    }
+    #imageSliderRight{
+        margin-left: 3%;
+    }
 
+}
 @media only screen and (min-width: 1100px) {
     #newsletter {
-        /* visibility: visible; */
         pointer-events: all;
         opacity: 1;
         transition: ease-out all .5s;
-
-
-
     }
 
 }
 
 @media only screen and (max-width: 1100px) {
     #newsletterIconVersion {
-        /* visibility: visible; */
         opacity: 1;
         pointer-events: all;
         transition: ease-out all .5s;
@@ -633,7 +572,11 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         height: 23rem;
     }
 }
-
+@media only screen and (min-width: 880px){
+    #imageSliderLeft{
+        margin-left: 35%;
+    }
+}
 @media only screen and (max-width: 816px){
     main{
         padding-left: var(--small-padding);
@@ -661,6 +604,9 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         padding-left: 0px;
         left: var(--small-padding);
     }
+    .goalCentre{
+        padding-top: 0%;
+    }
 
 }
 
@@ -668,16 +614,18 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 @media only screen and (max-width: 788px){
     .goalCentre{
         font-size: 2.5rem;
-        padding-top: 21%;
+        padding-top: 0%;
     }
     #cleanWater{
         font-size: 2.5rem;
     }
     .learnMore{
         padding: 0.5rem ;
+        margin-bottom: 20%;
         transition: ease-out all .5s;
     }
 }
+
 @media only screen and (max-width: 717px){
     .nav {
         padding-left: 1.5rem;
@@ -772,6 +720,13 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         margin-top: 11rem;
         height: 15rem;
     }
+    #imageSliderLeft{
+        margin-left: 36%;
+        padding: 1.5rem;
+    }
+    #imageSliderRight{
+        padding: 1.5rem;
+    }
 }
 @media only screen and (max-width: 440px) {
     .pages li{
@@ -806,29 +761,21 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         font-size: 5rem;
     }
     #goals{
-        padding-bottom: 20%;
+        padding-bottom: 0%;
     }
     #imageSliderRight{
         font-size: 2rem;
-        margin-right: 500%;
+        margin-right: 33%;
     }
     #imageSliderLeft{
         font-size: 2rem;
-        margin-right: var(--big-padding);
+        margin-left:33%;
+        margin-right: 5%;
         
-    
     }
     #submit{
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
     }
 }    
-.ArrowButton{
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-@media only screen and (max-width: 880px){
-
-}

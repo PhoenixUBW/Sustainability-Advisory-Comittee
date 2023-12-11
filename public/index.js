@@ -166,7 +166,7 @@ function loadContent(){
             </div>
         </article>
     </section>
-    <article id=${teamMeet.articleID}>
+    <article>
     <h2 class=${teamMeet.teamClass}>${teamMeet.teamText}</h2>
     <p id=${teamMeet.paraID}>${teamMeet.paraText}</p>
     <button class=${teamMeet.buttonClass}><a href="team.html">${teamMeet.meetTeam}</a></button>
