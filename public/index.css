@@ -386,18 +386,12 @@ h2{
     font-size: 1.5rem;
     padding-bottom: 5%;
 }
-/* #imageSliderRight{
-    display: block;
-    padding: 5%;
-    position: absolute;
-    margin-right: 15%;
+#imageSliderRight{
+    padding: 3rem;
 }
 #imageSliderLeft{
-    padding: 5%;
-    position: absolute;
-    margin-left: 15%;
-    rotate: 180deg;
-} */
+    padding: 3rem;
+}
 
 
 h4 {
@@ -814,16 +808,16 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     #goals{
         padding-bottom: 20%;
     }
-    /* #imageSliderRight{
+    #imageSliderRight{
         font-size: 2rem;
-        margin-left: 50%;
+        margin-right: 500%;
     }
     #imageSliderLeft{
         font-size: 2rem;
-        margin-left: var(--big-padding);
+        margin-right: var(--big-padding);
         
     
-    } */
+    }
     #submit{
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
@@ -837,8 +831,4 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 
 @media only screen and (max-width: 880px){
 
-}
-
-#imageSliderLeft{
-    rotate: 180deg;
 }

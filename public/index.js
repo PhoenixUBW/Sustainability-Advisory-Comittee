@@ -25,10 +25,9 @@ console.log(topContent.length);
 
 
 class ourGoals{
-    constructor(articleID,slideIDLe,slideClass,slideIDRi,goalClass,goalID,goalText,buttonClass,buttonText){
+    constructor(articleID,slideIDLe,slideIDRi,goalClass,goalID,goalText,buttonClass,buttonText){
         this.articleID=articleID;
         this.slideIDLe=slideIDLe;
-        this.slideClass=slideClass;
         this.slideIDRi=slideIDRi;
         this.goalClass=goalClass
         this.goalID=goalID;
@@ -41,7 +40,6 @@ class ourGoals{
 const ourGoal=new ourGoals(
     "splash",
     "imageSliderLeft",
-    "fa-solid fa-arrow-right",
     "imageSliderRight",
     "ourGoals",
     "mainHeading",
@@ -136,10 +134,12 @@ function loadContent(){
         <h1 id=${head.subID}>${head.headContent}</h1>
         <h3 id="subheading">${head.subContent}</h3>
     </article>
+    <div id=wrapper>
     <img id=${head.imgID} src=${head.imgSrc} alt=${head.imgAlt}>
     <article id=${ourGoal.articleID}>
-        <button class="ArrowButton" id=${ourGoal.slideIDLe}><i class="fa-solid fa-arrow-right"></i></button>
-        <button class="ArrowButton" id=${ourGoal.slideIDRi}><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="ArrowButton" id=${ourGoal.slideIDLe}><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="ArrowButton" id=${ourGoal.slideIDRi}><i class="fa-solid fa-arrow-right"></i></button>
+    </div>    
         <h1 class= ${ourGoal.goalClass} id=${ourGoal.goalID}>${ourGoal.goalText}</h1>
         <button class=${ourGoal.buttonClass}><a href="goals.html">${ourGoal.buttonText}</a></button>
     </article>
