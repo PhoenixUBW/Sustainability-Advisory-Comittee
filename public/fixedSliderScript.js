@@ -1,7 +1,7 @@
 const slideButtonRight=document.querySelector("#imageSliderRight");
 const slideButtonLeft=document.querySelector("#imageSliderLeft");
 
-const images = ["images/beautiful-landscape-2.jpg","images/waterSanitation.jpg","images/poverty.jpg"]
+const images = ["images/circle-sea.jpg","images/forest-lake.jpg","images/landscape-with-fence.jpg"]
 let currentImageIndex = 0;
 
 currentImage = images[currentImageIndex]

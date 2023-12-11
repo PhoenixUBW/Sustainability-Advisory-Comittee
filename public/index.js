@@ -1,5 +1,5 @@
 class heading{
-    constructor(mainID,subID,headContent,subContent,imgID,imgSrc,imgAlt){
+    constructor(mainID,subID,headContent,subContent,imgID,imgSrc,imgAlt,slideButtonSrc){
         this.mainID=mainID;
         this.subID=subID;
         this.headContent=headContent;
@@ -7,6 +7,7 @@ class heading{
         this.imgID=imgID;
         this.imgSrc=imgSrc;
         this.imgAlt=imgAlt;
+        this.slideButtonSrc=slideButtonSrc;
     }
 }
 const head= new heading(
@@ -16,7 +17,8 @@ const head= new heading(
     "Empowering Global Change. We are advocating and implementing the United Nations' sustainability goals for a more resilient and equitable future.",
     "slideImg",
     "images/beautiful-landscape-2.jpg",
-    "beautiful landscape")
+    "beautiful landscape",
+    "fixedSliderScript.js")
 
 const topContent=[];
 
@@ -136,13 +138,11 @@ function loadContent(){
     </article>
     <div id=wrapper>
     <img id=${head.imgID} src=${head.imgSrc} alt=${head.imgAlt}>
-    <article id=${ourGoal.articleID}>
             <button class="ArrowButton" id=${ourGoal.slideIDLe}><i class="fa-solid fa-arrow-left"></i></button>
             <button class="ArrowButton" id=${ourGoal.slideIDRi}><i class="fa-solid fa-arrow-right"></i></button>
     </div>    
         <h1 class= ${ourGoal.goalClass} id=${ourGoal.goalID}>${ourGoal.goalText}</h1>
         <button class=${ourGoal.buttonClass}><a href="goals.html">${ourGoal.buttonText}</a></button>
-    </article>
 
     <section id="goals"> 
         <article class=${goal1.articleClass} id=${goal1.articleID}>
