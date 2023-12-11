@@ -1,36 +1,39 @@
-const submit = document.getElementById('submit');
-
 function saveFormToJson() {
-    const form = document.getElementById('myForm');
-
     const formData = {
-        firstName : document.getElementById('first-name').value,
-        lastName : document.getElementById('surname').value,
-        email : document.getElementById('email').value,
-        comments : document.getElementById('comments').value
+        firstName : document.getElementById("first-name-main").value,
+        lastName : document.getElementById("surname-main").value,
+        email : document.getElementById("email-main").value,
+        comments : document.getElementById("comments-main").value
     };
 
-    // Convert the object to JSON
     var jsonData = JSON.stringify(formData);
 
-    // Use the Fetch API to send data to the server
-    fetch('your_server_endpoint', {
-        method: 'POST',
+    fetch("/newsletter", {
+        method: "POST",
         headers: {
-            'Content-Type': 'application/json',
-            'Content-Type': 'application/json',
+            "Accept": "application/json",
+            "Content-Type": "application/json",
         },
         body: jsonData,
     })
     .then(response => response.json())
     .then(data => {
-        // Handle the server response if needed
-        console.log('Server response:', data);
+        console.log("Server response:", data);
     })
     .catch(error => {
-        // Handle errors
-        console.error('Error:', error);
+        console.error("Error:", error);
     });
 }
 
-submit.addEventListener('click', processSubmit);
+document.addEventListener("DOMContentLoaded", function() {
+    const formContainer = document.querySelector("#form-container-main");
+
+    formContainer.addEventListener("click", function (event) {
+        const target = event.target;
+
+        if (target.id === "submit-main") {
+            event.preventDefault();
+            saveFormToJson();
+        }
+    });
+})
