@@ -1,4 +1,4 @@
-const images = ["images/circle-sea.jpg","images/forest-lake.jpg","images/beautiful-landscape-2.jpg"]
+const images = ["images/landscape-with-fence.jpg","images/forest-lake.jpg","images/beautiful-landscape-2.jpg"]
 let currentImageIndex = 0;
 
 currentImage = images[currentImageIndex]
@@ -34,12 +34,12 @@ function leftSliderClicked() {
 }
 
 
-window.addEventListener("DOMContentLoaded", eventListen);
-
-function eventListen(e){
+function eventListen(){
     const slideButtonRight=document.querySelector("#imageSliderRight");
     const slideButtonLeft=document.querySelector("#imageSliderLeft");
 
     slideButtonRight.addEventListener("click",rightSliderClicked);
     slideButtonLeft.addEventListener("click",leftSliderClicked);
 }
+
+window.addEventListener("DOMContentLoaded", eventListen);
