@@ -45,7 +45,6 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 0.5rem;
-
     left: 0px;
     right: 0px;
     margin: 0 auto;
@@ -54,6 +53,9 @@ body {
     background: #7BAE7F;
     width: 30em;
     border-radius: 25px;
+}
+#test-response-main p:hover {
+    padding: 0.8rem;
 }
 
 html {
