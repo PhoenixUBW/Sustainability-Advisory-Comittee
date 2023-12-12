@@ -35,10 +35,9 @@ app.post('/form', (req, res) => {
     existingData.push(body);
 
     // Write the updated data back to the file
-    fs.writeFile('body.json', JSON.stringify(existingData), (writeErr) => {
+    fs.writeFile('body.json', JSON.stringify(existingData), () => {
       console.log('Form data appended to body.json');
       res.send(`Hi ${firstName} ${surname}, thanks for signing up. A confirmation email has been sent to: ${email}`);
-
     });
   });
 });
