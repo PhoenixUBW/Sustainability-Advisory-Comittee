@@ -1,5 +1,0 @@
-add names, bio, role, responsibility, contributions to team page
-site guide - comment on division of work between team members, trello
-does sign up page work? - json
-
-validate files
