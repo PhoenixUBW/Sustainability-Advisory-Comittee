@@ -28,8 +28,6 @@ app.post('/newsletterForm', (req, res) => { // this is just for the newsletter v
   const originalDataInDB = JSON.parse(fs.readFileSync('body.json', 'utf8'));
   originalDataInDB.push(body);
   fs.writeFileSync('body.json', JSON.stringify(originalDataInDB));
-
-  console.log('Form data appended to body.json');
   res.send(`Hi ${body.firstName} ${body.surname}, thanks for signing up. A confirmation email has been sent to: ${body.email}`);
 });
 
