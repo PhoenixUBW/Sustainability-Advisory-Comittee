@@ -42,6 +42,7 @@ body {
     border-radius: 25px;
 }
 
+
 #test-response-main p { 
     text-align: center;
     color: rgb(255, 255, 255);
@@ -53,6 +54,7 @@ body {
     border: 1px solid ;
     background: #7BAE7F;
     width: 30em;
+    max-width: 90%;
     border-radius: 25px;
 }
 #test-response-main p:hover {
@@ -553,7 +555,11 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 }
 
 @media only screen and (max-width: 880px){
-
+    #test-response-main p{
+        position: absolute;
+        margin-top: 15rem;
+        /* margin-bottom: ; */
+    }
     #newsletter-image{
         visibility: hidden;
         /* inset: 0; */
@@ -572,6 +578,7 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         
     }
     #why-and-previous{
+        padding-top: 15rem;
         margin-right: auto;
     }
     .signUpPlead {
@@ -584,11 +591,6 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         top: 12rem;
     }
 
-
-
-    #form-main{
-    padding-bottom: 15rem;
-}
 
     #copyright {
         top: 17rem;
@@ -679,8 +681,13 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     }
 
     #form-main{
-    padding-bottom: 25rem;
-}
+        padding-bottom: 15rem;
+    }
+
+    #test-response-main p{
+        margin-top: 25rem;
+    }
+
 
 
     #plead-main{
