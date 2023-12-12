@@ -41,6 +41,21 @@ body {
     border-radius: 25px;
 }
 
+#test-response-main p { 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid ;
+    background: #7BAE7F;
+    width: 30em;
+    border-radius: 25px;
+}
+
 html {
     background-color: white;
 }
