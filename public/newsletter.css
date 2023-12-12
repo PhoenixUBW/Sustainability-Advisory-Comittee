@@ -38,6 +38,7 @@ body {
     border: 1px solid rgb(17, 61, 31);
     background: #122112;
     width: 30em;
+    max-width: 90%;
     border-radius: 25px;
 }
 
@@ -583,19 +584,26 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         top: 12rem;
     }
 
-    #copyright {
-        top: 12rem;
-    }
+
 
     #form-main{
     padding-bottom: 15rem;
 }
 
+    #copyright {
+        top: 17rem;
+    }
 
-
+#test-response p{ 
+    position: absolute;
+    margin-top: 13rem;
+    left: auto;
+    margin-left: 1rem;
+    right: auto;
+}
 
     footer {
-        height: 23rem;
+        height: 28rem;
     }
 }
 
@@ -732,14 +740,28 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         height: 7rem;
     }
 
-    #copyright {
-        top: 22rem;
-    }
 
     #newsletter-image{
         visibility: visible;
         margin-top: 11rem;
         height: 15rem;
+    }
+
+    #copyright {
+        top: 27rem;
+    }
+
+    footer{
+        height: 46rem;
+    }
+
+    #test-response p{ 
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        margin-top: 23.5rem;
+        
     }
     
     #fieldset-main{
@@ -775,7 +797,7 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     }
 
     footer {
-        height: 50rem;
+        height: 55rem;
     }
     
 }
