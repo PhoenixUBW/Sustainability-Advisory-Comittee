@@ -24,7 +24,6 @@ app.post('/form', (req, res) => { // this one works for all footers
 
 app.post('/newsletterForm', (req, res) => { // this is just for the newsletter version.
   const body = req.body;
-  // Read existing data from the file
   const originalDataInDB = JSON.parse(fs.readFileSync('body.json', 'utf8'));
   originalDataInDB.push(body);
   fs.writeFileSync('body.json', JSON.stringify(originalDataInDB));
