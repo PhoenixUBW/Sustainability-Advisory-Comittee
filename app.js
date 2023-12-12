@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs');
+const fs = require('fs'); // needed to read files.
 const path = require('path');
 
 const app = express();
@@ -9,67 +9,30 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(express.static('public')); // public directory
 
-
-app.get('*', (req, res) => {  // \       * to select all pages
-    res.sendFile(path.join('public', 'index.html'));
-  });
-  
-
-app.post('/form', (req, res) => {
-  const body = req.body;
-  
-  const firstName = body.firstName;
-  const surname = body.surname;
-  const email = body.email;
-  const message = body.message;
-
-  // Read existing data from the file
-  fs.readFile('body.json', 'utf8', (data) => {
-    let existingData;
-    if (data) {
-        existingData = JSON.parse(data);
-      } else {
-        existingData = [];
-      }
-
-    existingData.push(body);
-
-    // Write the updated data back to the file
-    fs.writeFile('body.json', JSON.stringify(existingData), (writeErr) => {
-      console.log('Form data appended to body.json');
-      res.send(`Hi ${firstName} ${surname}, thanks for signing up. A confirmation email has been sent to: ${email}`);
-
-    });
-  });
+app.get('*', (req, res) => {
+  res.sendFile(path.join('public', 'index.html'));
 });
 
-app.post('/newsletterForm', (req, res) => {
-    const body = req.body;
-    
-    const firstName = body.firstName;
-    const surname = body.surname;
-    const email = body.email;
-    const message = body.message;
-  
-    // Read existing data from the file
-    fs.readFile('body.json', 'utf8', (data) => {
-      let existingData;
-      if (data) {
-          existingData = JSON.parse(data);
-        } else {
-          existingData = [];
-        }
-  
-      existingData.push(body);
-  
-      // Write the updated data back to the file
-      fs.writeFile('body.json', JSON.stringify(existingData), () => {
-        console.log('Form data appended to body.json');
-        res.send(`Hi ${firstName} ${surname}, thanks for signing up. A confirmation email has been sent to: ${email}`);
-      });
-    });
-  });
+app.post('/form', (req, res) => { // this one works for all footers
+  const body = req.body;
+  // Read existing data from the file
+  const originalDataInDB = JSON.parse(fs.readFileSync('body.json', 'utf8'));
+  originalDataInDB.push(body);
+  fs.writeFileSync('body.json', JSON.stringify(originalDataInDB));
+  res.send(`Hi ${body.firstName} ${body.surname}, thanks for signing up. A confirmation email has been sent to: ${body.email}`);
+});
+
+app.post('/newsletterForm', (req, res) => { // this is just for the newsletter version.
+  const body = req.body;
+  // Read existing data from the file
+  const originalDataInDB = JSON.parse(fs.readFileSync('body.json', 'utf8'));
+  originalDataInDB.push(body);
+  fs.writeFileSync('body.json', JSON.stringify(originalDataInDB));
+
+  console.log('Form data appended to body.json');
+  res.send(`Hi ${body.firstName} ${body.surname}, thanks for signing up. A confirmation email has been sent to: ${body.email}`);
+});
 
 app.listen(port, () => {
-  console.log(`Server running on: http://localhost:${port}`);
+  console.log(`✨ Server running on: http://localhost:${port} ✨`);
 });
