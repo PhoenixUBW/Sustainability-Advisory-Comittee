@@ -112,7 +112,6 @@ main * {
     border-radius: 8vw;
 }
 
-
 #logo {
     position: absolute;
     height: 5rem;
@@ -524,6 +523,12 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         opacity: 1;
         transition: ease-out all .5s;
     }
+    #imageSliderLeft{
+        margin-right: 1%;
+    }
+    #imageSliderRight{
+        margin-left: 1%;
+    }
 
 }
 
@@ -769,7 +774,7 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     }
     #imageSliderLeft{
         font-size: 2rem;
-        margin-left:33%;
+        margin-left:38%;
         margin-right: 5%;
         
     }

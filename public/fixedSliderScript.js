@@ -1,7 +1,4 @@
-const slideButtonRight=document.querySelector("#imageSliderRight");
-const slideButtonLeft=document.querySelector("#imageSliderLeft");
-
-const images = ["images/circle-sea.jpg","images/forest-lake.jpg","images/landscape-with-fence.jpg"]
+const images = ["images/circle-sea.jpg","images/forest-lake.jpg","images/beautiful-landscape-2.jpg"]
 let currentImageIndex = 0;
 
 currentImage = images[currentImageIndex]
@@ -37,6 +34,12 @@ function leftSliderClicked() {
 }
 
 
+window.addEventListener("DOMContentLoaded", eventListen);
 
-slideButtonRight.addEventListener("click",rightSliderClicked);
-slideButtonLeft.addEventListener("click",leftSliderClicked);
+function eventListen(e){
+    const slideButtonRight=document.querySelector("#imageSliderRight");
+    const slideButtonLeft=document.querySelector("#imageSliderLeft");
+
+    slideButtonRight.addEventListener("click",rightSliderClicked);
+    slideButtonLeft.addEventListener("click",leftSliderClicked);
+}

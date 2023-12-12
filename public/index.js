@@ -138,8 +138,8 @@ function loadContent(){
     </article>
     <div id=wrapper>
     <img id=${head.imgID} src=${head.imgSrc} alt=${head.imgAlt}>
-            <button class="ArrowButton" id=${ourGoal.slideIDLe}><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="ArrowButton" id=${ourGoal.slideIDRi}><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="ArrowButton" id=${ourGoal.slideIDLe}><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="ArrowButton" id=${ourGoal.slideIDRi}><i class="fa-solid fa-arrow-right"></i></button>
     </div>    
         <h1 class= ${ourGoal.goalClass} id=${ourGoal.goalID}>${ourGoal.goalText}</h1>
         <button class=${ourGoal.buttonClass}><a href="goals.html">${ourGoal.buttonText}</a></button>
