@@ -24,7 +24,7 @@ app.post('/form', (req, res) => {
   const message = body.message;
 
   // Read existing data from the file
-  fs.readFile('body.json', 'utf8', (err, data) => {
+  fs.readFile('body.json', 'utf8', (data) => {
     let existingData;
     if (data) {
         existingData = JSON.parse(data);
