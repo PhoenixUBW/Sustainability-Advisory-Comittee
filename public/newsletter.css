@@ -596,13 +596,14 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         top: 17rem;
     }
 
-#test-response p{ 
-    position: absolute;
-    margin-top: 13rem;
-    left: auto;
-    margin-left: 1rem;
-    right: auto;
-}
+    #test-response p{ 
+        position: absolute;
+        margin-top: 13rem;
+        left: auto;
+        margin-left: 1rem;
+        right: auto;
+        margin-bottom: 2.5rem;
+    }
 
     footer {
         height: 28rem;
