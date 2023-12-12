@@ -42,6 +42,33 @@ app.post('/form', (req, res) => {
   });
 });
 
+app.post('/newsletterForm', (req, res) => {
+    const body = req.body;
+    
+    const firstName = body.firstName;
+    const surname = body.surname;
+    const email = body.email;
+    const message = body.message;
+  
+    // Read existing data from the file
+    fs.readFile('body.json', 'utf8', (data) => {
+      let existingData;
+      if (data) {
+          existingData = JSON.parse(data);
+        } else {
+          existingData = [];
+        }
+  
+      existingData.push(body);
+  
+      // Write the updated data back to the file
+      fs.writeFile('body.json', JSON.stringify(existingData), () => {
+        console.log('Form data appended to body.json');
+        res.send(`Hi ${firstName} ${surname}, thanks for signing up. A confirmation email has been sent to: ${email}`);
+      });
+    });
+  });
+
 app.listen(port, () => {
   console.log(`Server running on: http://localhost:${port}`);
 });

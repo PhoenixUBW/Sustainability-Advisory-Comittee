@@ -1,4 +1,4 @@
-const submit = document.getElementById('submit-footer');
+var submit = document.getElementById('submit-footer');
 var signedUp = false;
 
 function processSubmit(e){

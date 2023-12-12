@@ -62,3 +62,7 @@ function loadFullContent(pageContentLoaders) {
 }
 
 window.addEventListener("DOMContentLoaded", () => loadFullContent(pageContentLoaders), false);
+
+let script = document.createElement('script');
+script.src = 'newsletterForm.js';
+document.head.appendChild(script);
