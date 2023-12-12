@@ -26,6 +26,41 @@ body {
     font-size: 1.1rem;
 }
 
+#test-response p{ 
+    text-align: center;
+    color: rgb(218, 218, 218);
+    padding: 0.5rem;
+
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid rgb(17, 61, 31);
+    background: #122112;
+    width: 30em;
+    max-width: 90%;
+    border-radius: 25px;
+}
+
+
+#test-response-main p { 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid ;
+    background: #7BAE7F;
+    width: 30em;
+    max-width: 90%;
+    border-radius: 25px;
+}
+#test-response-main p:hover {
+    padding: 0.8rem;
+}
+
 html {
     background-color: white;
 }
@@ -520,7 +555,11 @@ fieldset input::placeholder, fieldset textarea::placeholder {
 }
 
 @media only screen and (max-width: 880px){
-
+    #test-response-main p{
+        position: absolute;
+        margin-top: 15rem;
+        /* margin-bottom: ; */
+    }
     #newsletter-image{
         visibility: hidden;
         /* inset: 0; */
@@ -539,6 +578,7 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         
     }
     #why-and-previous{
+        padding-top: 15rem;
         margin-right: auto;
     }
     .signUpPlead {
@@ -551,19 +591,22 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         top: 12rem;
     }
 
+
     #copyright {
-        top: 12rem;
+        top: 17rem;
     }
 
-    #form-main{
-    padding-bottom: 15rem;
-}
-
-
-
+    #test-response p{ 
+        position: absolute;
+        margin-top: 13rem;
+        left: auto;
+        margin-left: 1rem;
+        right: auto;
+        margin-bottom: 2.5rem;
+    }
 
     footer {
-        height: 23rem;
+        height: 28rem;
     }
 }
 
@@ -639,8 +682,13 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     }
 
     #form-main{
-    padding-bottom: 25rem;
-}
+        padding-bottom: 15rem;
+    }
+
+    #test-response-main p{
+        margin-top: 25rem;
+    }
+
 
 
     #plead-main{
@@ -700,14 +748,28 @@ fieldset input::placeholder, fieldset textarea::placeholder {
         height: 7rem;
     }
 
-    #copyright {
-        top: 22rem;
-    }
 
     #newsletter-image{
         visibility: visible;
         margin-top: 11rem;
         height: 15rem;
+    }
+
+    #copyright {
+        top: 27rem;
+    }
+
+    footer{
+        height: 46rem;
+    }
+
+    #test-response p{ 
+        text-align: center;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        margin-top: 23.5rem;
+        
     }
     
     #fieldset-main{
@@ -743,7 +805,7 @@ fieldset input::placeholder, fieldset textarea::placeholder {
     }
 
     footer {
-        height: 50rem;
+        height: 55rem;
     }
     
 }
